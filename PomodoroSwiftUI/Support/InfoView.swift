@@ -15,11 +15,12 @@ struct InfoView: View {
     var body: some View {
         RoundedRectangle(cornerRadius: 30)
             .fill(Color(.white))
-            .frame(height: 50)
+            .frame(height: 45)
             .overlay(
                 HStack {
                 Image(systemName: imageName)
                         .foregroundColor(.green)
+                        .font(.system(size: 25))
                 Text(text)
         })
             .padding()

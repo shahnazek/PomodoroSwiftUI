@@ -7,20 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7776D9528B7F085005CF345 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7776D9328B7F085005CF345 /* Pacifico-Regular.ttf */; };
+		E7776D9628B7F085005CF345 /* RobotoSlab-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7776D9428B7F085005CF345 /* RobotoSlab-VariableFont_wght.ttf */; };
 		E77EBD56289EB64500FCA76B /* PomodoroSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77EBD55289EB64500FCA76B /* PomodoroSwiftUIApp.swift */; };
 		E77EBD58289EB64500FCA76B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77EBD57289EB64500FCA76B /* ContentView.swift */; };
 		E77EBD5A289EB64700FCA76B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E77EBD59289EB64700FCA76B /* Assets.xcassets */; };
 		E77EBD5D289EB64700FCA76B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E77EBD5C289EB64700FCA76B /* Preview Assets.xcassets */; };
 		E7985D9128A005C700446F74 /* BreakTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7985D9028A005C600446F74 /* BreakTimer.swift */; };
 		E7985D9328A0114600446F74 /* SupportTheDeveloper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7985D9228A0114600446F74 /* SupportTheDeveloper.swift */; };
-		E7985D9B28A041FA00446F74 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7985D9A28A041FA00446F74 /* Launch Screen.storyboard */; };
 		E7985D9D28A0484E00446F74 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7985D9C28A0484E00446F74 /* InfoView.swift */; };
+		E7A4E97028B7B9AF00AF5D0E /* BackgroundColor.png in Resources */ = {isa = PBXBuildFile; fileRef = E7A4E96F28B7B9AF00AF5D0E /* BackgroundColor.png */; };
 		E7CF53B928A2CCF000E79000 /* Focus Pocus.png in Resources */ = {isa = PBXBuildFile; fileRef = E7CF53B828A2CCF000E79000 /* Focus Pocus.png */; };
 		E7CF53BD28A2D05800E79000 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF53BC28A2D05800E79000 /* MainView.swift */; };
 		E7D70150289ED8A900B216BB /* FocusTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D7014F289ED8A900B216BB /* FocusTimerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E7776D9328B7F085005CF345 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		E7776D9428B7F085005CF345 /* RobotoSlab-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		E77EBD52289EB64500FCA76B /* PomodoroSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomodoroSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77EBD55289EB64500FCA76B /* PomodoroSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroSwiftUIApp.swift; sourceTree = "<group>"; };
 		E77EBD57289EB64500FCA76B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -28,8 +32,9 @@
 		E77EBD5C289EB64700FCA76B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E7985D9028A005C600446F74 /* BreakTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakTimer.swift; sourceTree = "<group>"; };
 		E7985D9228A0114600446F74 /* SupportTheDeveloper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportTheDeveloper.swift; sourceTree = "<group>"; };
-		E7985D9A28A041FA00446F74 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		E7985D9C28A0484E00446F74 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		E7A4E96E28B7B40B00AF5D0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E7A4E96F28B7B9AF00AF5D0E /* BackgroundColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackgroundColor.png; sourceTree = "<group>"; };
 		E7CF53B828A2CCF000E79000 /* Focus Pocus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Focus Pocus.png"; sourceTree = "<group>"; };
 		E7CF53BC28A2D05800E79000 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E7D7014F289ED8A900B216BB /* FocusTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusTimerView.swift; sourceTree = "<group>"; };
@@ -46,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E7776D9028B7EB86005CF345 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E7776D9328B7F085005CF345 /* Pacifico-Regular.ttf */,
+				E7776D9428B7F085005CF345 /* RobotoSlab-VariableFont_wght.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		E77EBD49289EB64500FCA76B = {
 			isa = PBXGroup;
 			children = (
@@ -65,13 +79,15 @@
 		E77EBD54289EB64500FCA76B /* PomodoroSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				E7A4E96E28B7B40B00AF5D0E /* Info.plist */,
 				E77EBD55289EB64500FCA76B /* PomodoroSwiftUIApp.swift */,
 				E77EBD57289EB64500FCA76B /* ContentView.swift */,
 				E7CF53BE28A2D0CA00E79000 /* Focus and Break */,
 				E7CF53BB28A2D01D00E79000 /* Support */,
+				E7776D9028B7EB86005CF345 /* Fonts */,
 				E77EBD59289EB64700FCA76B /* Assets.xcassets */,
-				E7985D9A28A041FA00446F74 /* Launch Screen.storyboard */,
 				E7CF53B828A2CCF000E79000 /* Focus Pocus.png */,
+				E7A4E96F28B7B9AF00AF5D0E /* BackgroundColor.png */,
 				E77EBD5B289EB64700FCA76B /* Preview Content */,
 			);
 			path = PomodoroSwiftUI;
@@ -163,9 +179,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7CF53B928A2CCF000E79000 /* Focus Pocus.png in Resources */,
-				E7985D9B28A041FA00446F74 /* Launch Screen.storyboard in Resources */,
+				E7A4E97028B7B9AF00AF5D0E /* BackgroundColor.png in Resources */,
 				E77EBD5D289EB64700FCA76B /* Preview Assets.xcassets in Resources */,
 				E77EBD5A289EB64700FCA76B /* Assets.xcassets in Resources */,
+				E7776D9628B7F085005CF345 /* RobotoSlab-VariableFont_wght.ttf in Resources */,
+				E7776D9528B7F085005CF345 /* Pacifico-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,9 +334,10 @@
 				DEVELOPMENT_TEAM = HBVDGYDFKY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PomodoroSwiftUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Focus;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -345,9 +364,10 @@
 				DEVELOPMENT_TEAM = HBVDGYDFKY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PomodoroSwiftUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Focus;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
