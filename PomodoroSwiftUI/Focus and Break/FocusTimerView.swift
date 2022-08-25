@@ -13,19 +13,43 @@ struct FocusTimerView: View {
     @State var timer : Timer!
     @State var isTimerStarted = false
     @State var focusTime : Int = 1500
+    @State var fill : CGFloat = 0.0
     
 
     var body: some View {
         ZStack {
             Color(red: 0.93, green: 0.77, blue: 0.74)
                 .edgesIgnoringSafeArea(.all)
-            VStack(alignment: .center, spacing: 200, content: {
+            
+            
+            VStack(alignment: .center, spacing: 50, content: {
                 
                 
-                Text(timerLabel)
-                    .font(.system(size: 90))
-                    .foregroundColor(Color(red: 0.72, green: 0.20, blue: 0.22))
-                    .multilineTextAlignment(.trailing)
+                ZStack {
+                    
+                    //Track Circle
+                    Circle()
+                        .stroke(Color.white.opacity(0.3), style: StrokeStyle(lineWidth: 15))
+                    
+                    //Animation Circle
+                    Circle()
+                        .trim(from: 0, to: self.fill) // stroke the circle 50% of the way. self.fill is the state that changes
+                        .stroke(Color(red: 0.72, green: 0.20, blue: 0.22), style: StrokeStyle(lineWidth: 15))
+                        .rotationEffect(.init(degrees: -90))
+                        .animation(Animation.linear(duration: 0.5))
+                    
+                    
+                    Text(timerLabel)
+                        .font(.system(size: 80))
+                        .foregroundColor(Color(red: 0.72, green: 0.20, blue: 0.22))
+                        .multilineTextAlignment(.trailing)
+                    
+                }
+                .padding(30)
+                .frame(maxWidth: 500, maxHeight: 400)
+
+//                Spacer(minLength: 05)
+                
                 
                 HStack(alignment: .center, spacing: 120, content: {
                     
@@ -35,6 +59,8 @@ struct FocusTimerView: View {
                         focusTime = 1500
                         isTimerStarted = false
                         timerLabel = "25 : 00"
+                        self.fill = 0.0
+
                         
                     }, label: {
                         Image(systemName: "goforward")
@@ -70,6 +96,7 @@ struct FocusTimerView: View {
                 
                 
             })
+                
             
         }
     }
@@ -79,6 +106,9 @@ struct FocusTimerView: View {
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { Timer in
            
             focusTime -= 1
+            self.fill += 0.00066667
+            
+            
             timerLabel = formatCounter()
             
             if focusTime < 0 {
@@ -86,6 +116,7 @@ struct FocusTimerView: View {
                 isTimerStarted = false
                 timerLabel = "25 : 00"
                 focusTime = 1500
+                self.fill = 0.0
             }
         }
         
