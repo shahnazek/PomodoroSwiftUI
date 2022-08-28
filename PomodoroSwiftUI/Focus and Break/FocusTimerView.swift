@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct FocusTimerView: View {
     
@@ -14,6 +15,8 @@ struct FocusTimerView: View {
     @State var isTimerStarted = false
     @State var focusTime : Int = 1500
     @State var fill : CGFloat = 0.0
+    
+    @State var player : AVAudioPlayer?
     
 
     var body: some View {
@@ -112,11 +115,13 @@ struct FocusTimerView: View {
             timerLabel = formatCounter()
             
             if focusTime < 0 {
+                playSound()
                 timer.invalidate()
                 isTimerStarted = false
                 timerLabel = "25 : 00"
                 focusTime = 1500
                 self.fill = 0.0
+
             }
         }
         
@@ -128,6 +133,26 @@ struct FocusTimerView: View {
         let minutes = Int(focusTime) / 60 % 60
         let seconds = Int(focusTime) % 60
         return String(format : "%02i : %02i", minutes, seconds)
+    }
+    
+    func playSound() {
+        
+        guard let url = Bundle.main.url(forResource: "TimerDone", withExtension: "mp3") else { return }
+
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+
+            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+            guard let player = player else { return }
+
+            player.play()
+
+        } catch let error {
+            print(error.localizedDescription)
+        }
     }
     
 }

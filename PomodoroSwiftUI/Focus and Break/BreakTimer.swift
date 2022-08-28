@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct BreakTimer: View {
     
@@ -15,7 +16,7 @@ struct BreakTimer: View {
     @State var breakTime : Int = 300
     @State var fill : CGFloat = 0.0
 
-  
+    @State var player : AVAudioPlayer?
 
     var body: some View {
         
@@ -108,6 +109,7 @@ struct BreakTimer: View {
             timerLabel = formatCounter()
             
             if breakTime < 0 {
+                playSound()
                 timer.invalidate()
                 isTimerStarted = false
                 timerLabel = "05 : 00"
@@ -125,6 +127,26 @@ struct BreakTimer: View {
         let minutes = Int(breakTime) / 60 % 60
         let seconds = Int(breakTime) % 60
         return String(format : "%02i : %02i", minutes, seconds)
+    }
+    
+    func playSound() {
+        
+        guard let url = Bundle.main.url(forResource: "TimerDone", withExtension: "mp3") else { return }
+
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+
+            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+            guard let player = player else { return }
+
+            player.play()
+
+        } catch let error {
+            print(error.localizedDescription)
+        }
     }
 
 }

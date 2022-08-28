@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E74B3A2128BBCFC800596C6F /* TimerDone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E74B3A2028BBCFC800596C6F /* TimerDone.mp3 */; };
 		E7776D9528B7F085005CF345 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7776D9328B7F085005CF345 /* Pacifico-Regular.ttf */; };
 		E7776D9628B7F085005CF345 /* RobotoSlab-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7776D9428B7F085005CF345 /* RobotoSlab-VariableFont_wght.ttf */; };
 		E77EBD56289EB64500FCA76B /* PomodoroSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77EBD55289EB64500FCA76B /* PomodoroSwiftUIApp.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E74B3A2028BBCFC800596C6F /* TimerDone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TimerDone.mp3; sourceTree = "<group>"; };
 		E7776D9328B7F085005CF345 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 		E7776D9428B7F085005CF345 /* RobotoSlab-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		E77EBD52289EB64500FCA76B /* PomodoroSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomodoroSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +90,7 @@
 				E77EBD59289EB64700FCA76B /* Assets.xcassets */,
 				E7CF53B828A2CCF000E79000 /* Focus Pocus.png */,
 				E7A4E96F28B7B9AF00AF5D0E /* BackgroundColor.png */,
+				E74B3A2028BBCFC800596C6F /* TimerDone.mp3 */,
 				E77EBD5B289EB64700FCA76B /* Preview Content */,
 			);
 			path = PomodoroSwiftUI;
@@ -183,6 +186,7 @@
 				E77EBD5D289EB64700FCA76B /* Preview Assets.xcassets in Resources */,
 				E77EBD5A289EB64700FCA76B /* Assets.xcassets in Resources */,
 				E7776D9628B7F085005CF345 /* RobotoSlab-VariableFont_wght.ttf in Resources */,
+				E74B3A2128BBCFC800596C6F /* TimerDone.mp3 in Resources */,
 				E7776D9528B7F085005CF345 /* Pacifico-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
