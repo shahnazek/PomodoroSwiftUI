@@ -17,7 +17,6 @@ struct FocusTimerView: View {
     @State var fill : CGFloat = 0.0
     
     @State var player : AVAudioPlayer?
-    
 
     var body: some View {
         ZStack {
@@ -29,7 +28,7 @@ struct FocusTimerView: View {
                 
                 
                 ZStack {
-                    
+                
                     //Track Circle
                     Circle()
                         .stroke(Color.white.opacity(0.3), style: StrokeStyle(lineWidth: 15))
@@ -37,13 +36,13 @@ struct FocusTimerView: View {
                     //Animation Circle
                     Circle()
                         .trim(from: 0, to: self.fill) // stroke the circle 50% of the way. self.fill is the state that changes
-                        .stroke(Color(red: 0.72, green: 0.20, blue: 0.22), style: StrokeStyle(lineWidth: 15))
+                        .stroke(Color(red: 0.72, green: 0.20, blue: 0.22), style: StrokeStyle(lineWidth: 15, lineCap: .round))
                         .rotationEffect(.init(degrees: -90))
-                        .animation(Animation.linear(duration: 0.5))
+                        .animation(.easeOut, value: self.fill)
                     
                     
                     Text(timerLabel)
-                        .font(.system(size: 80))
+                        .font(.system(size: 90))
                         .foregroundColor(Color(red: 0.72, green: 0.20, blue: 0.22))
                         .multilineTextAlignment(.trailing)
                     
@@ -87,7 +86,7 @@ struct FocusTimerView: View {
                         }
                         
                     }, label: {
-                        Image(systemName: "play.fill")
+                        Image(systemName: self.isTimerStarted == true ? "pause.fill" : "play.fill")
                             .resizable()
                             .scaledToFit()
                             .frame(width: 50, height: 50)
@@ -114,13 +113,13 @@ struct FocusTimerView: View {
             
             timerLabel = formatCounter()
             
-            if focusTime < 0 {
+            if focusTime == 0 {
                 playSound()
                 timer.invalidate()
                 isTimerStarted = false
                 timerLabel = "25 : 00"
                 focusTime = 1500
-                self.fill = 0.0
+
 
             }
         }
@@ -136,8 +135,8 @@ struct FocusTimerView: View {
     }
     
     func playSound() {
-        
-        guard let url = Bundle.main.url(forResource: "TimerDone", withExtension: "mp3") else { return }
+
+        guard let url = Bundle.main.url(forResource: "Illuminate", withExtension: "mp3") else { return }
 
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
@@ -149,11 +148,12 @@ struct FocusTimerView: View {
             guard let player = player else { return }
 
             player.play()
-
+            
         } catch let error {
             print(error.localizedDescription)
         }
     }
+    
     
 }
 

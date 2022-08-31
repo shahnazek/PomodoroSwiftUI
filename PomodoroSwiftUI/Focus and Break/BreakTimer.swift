@@ -17,7 +17,7 @@ struct BreakTimer: View {
     @State var fill : CGFloat = 0.0
 
     @State var player : AVAudioPlayer?
-
+    
     var body: some View {
         
         ZStack {
@@ -37,10 +37,9 @@ struct BreakTimer: View {
                     //Animation Circle
                     Circle()
                         .trim(from: 0, to: self.fill) // stroke the circle 50% of the way. self.fill is the state that changes
-                        .stroke(Color(red: 0.72, green: 0.20, blue: 0.22), style: StrokeStyle(lineWidth: 15))
+                        .stroke(Color(red: 0.72, green: 0.20, blue: 0.22), style: StrokeStyle(lineWidth: 15, lineCap: .round))
                         .rotationEffect(.init(degrees: -90))
-                        .animation(Animation.linear(duration: 0.5))
-                    
+                        .animation(.easeOut, value: self.fill)
                     
                     Text(timerLabel)
                         .font(.system(size: 90))
@@ -53,6 +52,8 @@ struct BreakTimer: View {
                 
                 
                 HStack(alignment: .center, spacing: 120, content: {
+                  
+                    // RESET BUTTON
                     
                     Button(action: {
                         
@@ -71,6 +72,8 @@ struct BreakTimer: View {
                             .foregroundColor(Color(red: 0.72, green: 0.20, blue: 0.22))
                     })
 
+                    // PLAY AND PAUSE BUTTON
+                    
                     Button(action: {
                         
                         if !isTimerStarted {
@@ -82,14 +85,17 @@ struct BreakTimer: View {
                             timer.invalidate()
                             isTimerStarted = false
                         }
-                        
+                    
                     }, label: {
-                        Image(systemName: "play.fill")
+                        Image(systemName: self.isTimerStarted == true ? "pause.fill" : "play.fill")
                             .resizable()
                             .scaledToFit()
                             .frame(width: 50, height: 50)
                             .foregroundColor(Color(red: 0.72, green: 0.20, blue: 0.22))
                     })
+                      
+                
+                        
                     
                 })
                 
@@ -108,20 +114,19 @@ struct BreakTimer: View {
             self.fill += 0.003333
             timerLabel = formatCounter()
             
-            if breakTime < 0 {
+            if breakTime == 0 {
                 playSound()
                 timer.invalidate()
                 isTimerStarted = false
                 timerLabel = "05 : 00"
                 breakTime = 300
-                self.fill = 0.0
 
             }
+                
         }
         
     }
         
-    
     func formatCounter() -> String {
         
         let minutes = Int(breakTime) / 60 % 60
@@ -129,9 +134,11 @@ struct BreakTimer: View {
         return String(format : "%02i : %02i", minutes, seconds)
     }
     
+    //MARK: - Play Sound
+    
     func playSound() {
-        
-        guard let url = Bundle.main.url(forResource: "TimerDone", withExtension: "mp3") else { return }
+
+        guard let url = Bundle.main.url(forResource: "Illuminate", withExtension: "mp3") else { return }
 
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
@@ -143,7 +150,7 @@ struct BreakTimer: View {
             guard let player = player else { return }
 
             player.play()
-
+            
         } catch let error {
             print(error.localizedDescription)
         }
@@ -157,3 +164,4 @@ struct BreakTimer_Previews: PreviewProvider {
         BreakTimer()
     }
 }
+

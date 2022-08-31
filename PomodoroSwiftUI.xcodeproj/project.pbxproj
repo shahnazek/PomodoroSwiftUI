@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E74B3A2128BBCFC800596C6F /* TimerDone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E74B3A2028BBCFC800596C6F /* TimerDone.mp3 */; };
+		E728E3E728BE85E0009C0EBF /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728E3E628BE85E0009C0EBF /* SoundPlayer.swift */; };
 		E7776D9528B7F085005CF345 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7776D9328B7F085005CF345 /* Pacifico-Regular.ttf */; };
 		E7776D9628B7F085005CF345 /* RobotoSlab-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7776D9428B7F085005CF345 /* RobotoSlab-VariableFont_wght.ttf */; };
 		E77EBD56289EB64500FCA76B /* PomodoroSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77EBD55289EB64500FCA76B /* PomodoroSwiftUIApp.swift */; };
 		E77EBD58289EB64500FCA76B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77EBD57289EB64500FCA76B /* ContentView.swift */; };
 		E77EBD5A289EB64700FCA76B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E77EBD59289EB64700FCA76B /* Assets.xcassets */; };
 		E77EBD5D289EB64700FCA76B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E77EBD5C289EB64700FCA76B /* Preview Assets.xcassets */; };
+		E794BD1F28BFAB0A00D0E5EE /* Illuminate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E794BD1E28BFAB0A00D0E5EE /* Illuminate.mp3 */; };
+		E794BD2128BFB59B00D0E5EE /* TimerDone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E794BD2028BFB59B00D0E5EE /* TimerDone.mp3 */; };
 		E7985D9128A005C700446F74 /* BreakTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7985D9028A005C600446F74 /* BreakTimer.swift */; };
 		E7985D9328A0114600446F74 /* SupportTheDeveloper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7985D9228A0114600446F74 /* SupportTheDeveloper.swift */; };
 		E7985D9D28A0484E00446F74 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7985D9C28A0484E00446F74 /* InfoView.swift */; };
-		E7A4E97028B7B9AF00AF5D0E /* BackgroundColor.png in Resources */ = {isa = PBXBuildFile; fileRef = E7A4E96F28B7B9AF00AF5D0E /* BackgroundColor.png */; };
-		E7CF53B928A2CCF000E79000 /* Focus Pocus.png in Resources */ = {isa = PBXBuildFile; fileRef = E7CF53B828A2CCF000E79000 /* Focus Pocus.png */; };
 		E7CF53BD28A2D05800E79000 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF53BC28A2D05800E79000 /* MainView.swift */; };
 		E7D70150289ED8A900B216BB /* FocusTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D7014F289ED8A900B216BB /* FocusTimerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E74B3A2028BBCFC800596C6F /* TimerDone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TimerDone.mp3; sourceTree = "<group>"; };
+		E728E3E628BE85E0009C0EBF /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 		E7776D9328B7F085005CF345 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 		E7776D9428B7F085005CF345 /* RobotoSlab-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		E77EBD52289EB64500FCA76B /* PomodoroSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomodoroSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,12 +32,12 @@
 		E77EBD57289EB64500FCA76B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E77EBD59289EB64700FCA76B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E77EBD5C289EB64700FCA76B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E794BD1E28BFAB0A00D0E5EE /* Illuminate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Illuminate.mp3; sourceTree = "<group>"; };
+		E794BD2028BFB59B00D0E5EE /* TimerDone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TimerDone.mp3; sourceTree = "<group>"; };
 		E7985D9028A005C600446F74 /* BreakTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakTimer.swift; sourceTree = "<group>"; };
 		E7985D9228A0114600446F74 /* SupportTheDeveloper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportTheDeveloper.swift; sourceTree = "<group>"; };
 		E7985D9C28A0484E00446F74 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		E7A4E96E28B7B40B00AF5D0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		E7A4E96F28B7B9AF00AF5D0E /* BackgroundColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackgroundColor.png; sourceTree = "<group>"; };
-		E7CF53B828A2CCF000E79000 /* Focus Pocus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Focus Pocus.png"; sourceTree = "<group>"; };
 		E7CF53BC28A2D05800E79000 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E7D7014F289ED8A900B216BB /* FocusTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusTimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,10 +88,9 @@
 				E7CF53BB28A2D01D00E79000 /* Support */,
 				E7776D9028B7EB86005CF345 /* Fonts */,
 				E77EBD59289EB64700FCA76B /* Assets.xcassets */,
-				E7CF53B828A2CCF000E79000 /* Focus Pocus.png */,
-				E7A4E96F28B7B9AF00AF5D0E /* BackgroundColor.png */,
-				E74B3A2028BBCFC800596C6F /* TimerDone.mp3 */,
 				E77EBD5B289EB64700FCA76B /* Preview Content */,
+				E794BD1E28BFAB0A00D0E5EE /* Illuminate.mp3 */,
+				E794BD2028BFB59B00D0E5EE /* TimerDone.mp3 */,
 			);
 			path = PomodoroSwiftUI;
 			sourceTree = "<group>";
@@ -116,9 +115,10 @@
 		E7CF53BE28A2D0CA00E79000 /* Focus and Break */ = {
 			isa = PBXGroup;
 			children = (
+				E7CF53BC28A2D05800E79000 /* MainView.swift */,
 				E7D7014F289ED8A900B216BB /* FocusTimerView.swift */,
 				E7985D9028A005C600446F74 /* BreakTimer.swift */,
-				E7CF53BC28A2D05800E79000 /* MainView.swift */,
+				E728E3E628BE85E0009C0EBF /* SoundPlayer.swift */,
 			);
 			path = "Focus and Break";
 			sourceTree = "<group>";
@@ -181,12 +181,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7CF53B928A2CCF000E79000 /* Focus Pocus.png in Resources */,
-				E7A4E97028B7B9AF00AF5D0E /* BackgroundColor.png in Resources */,
+				E794BD1F28BFAB0A00D0E5EE /* Illuminate.mp3 in Resources */,
 				E77EBD5D289EB64700FCA76B /* Preview Assets.xcassets in Resources */,
 				E77EBD5A289EB64700FCA76B /* Assets.xcassets in Resources */,
 				E7776D9628B7F085005CF345 /* RobotoSlab-VariableFont_wght.ttf in Resources */,
-				E74B3A2128BBCFC800596C6F /* TimerDone.mp3 in Resources */,
+				E794BD2128BFB59B00D0E5EE /* TimerDone.mp3 in Resources */,
 				E7776D9528B7F085005CF345 /* Pacifico-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E728E3E728BE85E0009C0EBF /* SoundPlayer.swift in Sources */,
 				E77EBD58289EB64500FCA76B /* ContentView.swift in Sources */,
 				E7CF53BD28A2D05800E79000 /* MainView.swift in Sources */,
 				E7985D9128A005C700446F74 /* BreakTimer.swift in Sources */,

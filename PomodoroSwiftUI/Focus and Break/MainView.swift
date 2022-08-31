@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct MainView: View {
+    
+    @Environment(\.presentationMode) var presentationMode
+
+    
     var body: some View {
         
         NavigationView {
@@ -96,8 +100,23 @@ struct MainView: View {
                     
             }
             
-        .navigationTitle("Focus Pocus")
+        .navigationTitle("Focus")
         .font(.subheadline)
+            
+            // Restore for in app purchase
+        .toolbar {
+            
+            ToolbarItem(placement: .confirmationAction) {
+                Button("Restore") {
+                    // replace the below code with payment details. check udemy course
+                    presentationMode.wrappedValue.dismiss()
+                    
+                }
+                }
+            
+            }
+            
+            
         }
                 
     }
